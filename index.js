@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const adminRoute = require('./routes/admin');
 
 // INIT
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 const DB = "mongodb+srv://ahmed:2002@cluster0.t0hsp4o.mongodb.net/?retryWrites=true&w=majority";
 const DBLOCAL = "mongodb://localhost:27017/Book_It";

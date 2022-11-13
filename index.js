@@ -23,7 +23,7 @@ app.use(userRouter);
 
 //Connnections
 mongoose
-    .connect(DBLOCAL)//"mongodb://localhost:27017/Book_It"
+    .connect(DB)//"mongodb://localhost:27017/Book_It"
     .then(() => {
         console.log('Connection Successful');
     })
